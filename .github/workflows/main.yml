@@ -1,0 +1,12 @@
+name: "Main test workflow"
+
+on:
+  workflow_call:
+
+jobs:
+  call_local_script:
+    name: "Call Local Script"
+    runs-on: ubuntu-22.04
+    steps:
+      - name: "Call script with action"
+        uses: mcbemlogic/actions_test_one/actions/call_script@main

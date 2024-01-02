@@ -1,0 +1,9 @@
+name: "Call script"
+description: "Call script"
+
+runs:
+  using: "composite"
+  steps:
+    - run: |
+        python ${{github.action_path}}/../../hello_world.py
+      shell: bash
