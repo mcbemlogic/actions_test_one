@@ -9,4 +9,5 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: "Call script with action"
-        uses: mcbemlogic/actions_test_one/actions/call_script@main
+        uses: ./actions/call_script
+        #uses: mcbemlogic/actions_test_one/actions/call_script@main
