@@ -7,5 +7,5 @@ runs:
     - run: |
         python ${{github.action_path}}/../../hello_world.py
       shell: bash
-    - run: echo ${{toJson(github)}}
+    - run: echo "${{toJson(github)}}"
       shell: bash
